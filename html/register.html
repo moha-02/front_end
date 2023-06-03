@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="C:\Users\mohammed\Documents\front_end\css\register.css">
+  <title>Register</title>
+</head>
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="#">
+                    <h2>Register</h2>
+                    <div class="inputbox">
+                        
+                        <input name="user" id="user" required>
+                       <label>User</label> 
+                    </div>
+
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" name="mail" id="mail" required>
+                       <label>Gmail</label> 
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" name="pass" id="pass" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="selects">
+                        <label>Select country</label>
+                    </div>
+                    <div><select name="codeCountry" id="codeCountry">
+                    </select></div>
+                    <div id="tab" class="cont"></div>
+                    <button type="submit" onclick="register()" >Register</button>
+                    <button type="submit" onclick="goLogin()" >Login</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="C:\Users\mohammed\Documents\front_end\js\register.js"></script>
+</body>
+</html>
