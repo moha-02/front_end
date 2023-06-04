@@ -30,9 +30,8 @@ function getSms(){
 
     var http = new XMLHttpRequest();
     http.open("GET","http://localhost:8080/final_frontend/Xat?mail=" + mail + "&session="+ session,true);
-    alert(http.response);
-    console.log(http.response);
-    http.onreadystatechange = function(){
+    
+    http.onload = function(){
         if(this.readyState== 4 && http.status==200){
             let message = JSON.parse(http.response);
             let listFriends = JSON.parse(http.response);
@@ -45,7 +44,6 @@ function getSms(){
         }
     }
     http.send();
-    console.log(http.response);
     alert(http.response);
 }
 function goOptions(){
