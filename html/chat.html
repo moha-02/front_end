@@ -9,18 +9,20 @@
 </head>
 <body>
     <section>
-		<div><button type="submit" onclick="sendSms()" class="button">
-            <span class="button__text">Send sms</span>
-            <span class="button__icon">
-                <ion-icon name="chatbubble-ellipses"></ion-icon>
-            </span>
+        <div class="container">
+            <label class="header">Mail del receptor <input type="text" id="receptor" ></label>
+            <div class="body">
+                <div><ul id="tab"></ul></div>
+            </div>
+            <div class="footer">
+                <form>
+                    <input type="text" id="sms">
+                    <button type="submit" onclick="sendSms()">SEND</button>
+                </form>
+            </div>
         </div>
-		<div id="send"></div>
-		<div id="get"></div>
-    </section>
-    
-	<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    <script src="C:\Users\mohammed\Documents\front_end\js\chat.js"></script>
 
+    </section>
+    <script src="C:\Users\mohammed\Documents\front_end\js\chat.js"></script>
 </body>
 </html>

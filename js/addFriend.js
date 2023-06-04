@@ -29,5 +29,5 @@ function addFriend(){
 }
 
 function goOptions(){
-    window.location.href = "C:\Users\mohammed\Documents\front_end\html\options.html";
+    window.location.href = "file:///C:/Users/mohammed/Documents/front_end/html/options.html";
 }

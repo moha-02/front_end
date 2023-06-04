@@ -1,17 +1,16 @@
 function goFrieND(){
-    window.location.href = "C:\Users\mohammed\Documents\front_end\html\listFriends.html";
+    window.location.href = "file:///C:/Users/mohammed/Documents/front_end/html/addFriend.html";
 }
 
 function goAmigos(){
-    window.location.href = "C:\Users\mohammed\Documents\front_end\html\listFriends.html";
+    window.location.href = "file:///C:/Users/mohammed/Documents/front_end/html/listFriends.html";
 }
 
 function goXat(){
-    window.location.href = "C:\Users\mohammed\Documents\front_end\html\chat.html";
+    window.location.href = "file:///C:/Users/mohammed/Documents/front_end/html/chat.html";
 }
 
 function logOut(){
-    sessionStorage.removeItem('session');
-    sessionStorage.removeItem('mail');
-    window.location.href = "C:\Users\mohammed\Documents\front_end\html\index.html";
+    sessionStorage.clear(0);
+    window.location.href = "file:///C:/Users/mohammed/Documents/front_end/html/index.html";
 }

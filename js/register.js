@@ -46,7 +46,7 @@ function codeCountry(){
     http.send();
 }
 function goLogin(){
-    window.location.href = "/html/index.html";
+    window.location.href = "file:///C:/Users/mohammed/Documents/front_end/html/index.html";
   }
 
 window.onload = function(){

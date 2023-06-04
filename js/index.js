@@ -17,7 +17,7 @@ function enviar(){
       if(session !== "false"){
         sessionStorage.setItem("session",session);
         sessionStorage.setItem("mail",mail);
-        window.location.href = "C:\Users\mohammed\Documents\front_end\html\options.html";
+        window.location.href = "file:///C:/Users/mohammed/Documents/front_end/html/options.html";
       } else{
         alert("Sesion interrumpida.Vuelva a intentarlo.")
       }
@@ -28,5 +28,5 @@ function enviar(){
 
 
 function goRegister(){
-  window.location.href = "C:\Users\mohammed\Documents\front_end\html\register.html";
+  window.location.href = "file:///C:/Users/mohammed/Documents/front_end/html/register.html";
 }
