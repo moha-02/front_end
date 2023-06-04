@@ -1,3 +1,4 @@
+//RECIBE LOS PARAMETROS Y LOS REGISTRA EN LA BASE DE DATOS MEDIANTE LA CONEXION POST
 function register(){
 
     let user = document.getElementById("user").value;
@@ -22,6 +23,7 @@ function register(){
     }
 }
 
+//RECIBE LOS PAISES Y LOS MUESTRA COMO OPCIONES
 function codeCountry(){
     var http = new XMLHttpRequest();
     http.open("GET","http://localhost:8080/final_frontend/Register",true);
@@ -45,10 +47,11 @@ function codeCountry(){
     }
     http.send();
 }
+//VUELVE AL LOGIN
 function goLogin(){
     window.location.href = "file:///C:/Users/mohammed/Documents/front_end/html/index.html";
-  }
-
+}
+//PERMITE MOSTRAR LOS PAISES DESDE QUE SE INICIA LA PAGINA
 window.onload = function(){
     codeCountry();
     

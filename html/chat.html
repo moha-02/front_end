@@ -10,18 +10,21 @@
 <body>
     <section>
         <div class="container">
-            <label class="header">Mail del receptor <input type="text" id="receptor" ></label>
+            <label class="header">
+                Mail del receptor <input type="text" id="receptor" >
+                <button class="but" type="submit" onclick="goOptions()">Options</button>
+            </label>
             <div class="body">
                 <div><ul id="tab"></ul></div>
             </div>
             <div class="footer">
                 <form>
                     <input type="text" id="sms">
-                    <button type="submit" onclick="sendSms()">SEND</button>
+                    <button type="submit" onclick="sendSms()">Send</button>
                 </form>
             </div>
+            
         </div>
-
     </section>
     <script src="C:\Users\mohammed\Documents\front_end\js\chat.js"></script>
 </body>

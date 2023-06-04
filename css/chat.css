@@ -70,12 +70,31 @@ form button{
     width: 100px;
     font-size: 18px;
     border: none;
+    border-radius: 40px;
     outline: none;
     background-color: dodgerblue;
     color: white;
     cursor: pointer;
+    margin-left: 2px;
 }
 form button:hover{
-    background-color: blue;
+    background-color: rgb(0, 255, 247);
+    transition: 0.2s ease;
+}
+.but{
+    width: 100px;
+    font-size: 18px;
+    border: none;
+    border-radius: 40px;
+    outline: none;
+    background-color: dodgerblue;
+    color: white;
+    cursor: pointer;
+    margin-left: 2px;
+    padding: 2px;
+   
+}
+.but:hover{
+    background-color: rgb(0, 255, 247);
     transition: 0.2s ease;
 }

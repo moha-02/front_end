@@ -1,3 +1,4 @@
+//FUNCIONES PARA MOVERSE A LAS DIFERENTE SPAGINAS ADEMAS DE LOGOUT
 function goFrieND(){
     window.location.href = "file:///C:/Users/mohammed/Documents/front_end/html/addFriend.html";
 }

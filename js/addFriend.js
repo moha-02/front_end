@@ -2,14 +2,15 @@ function addFriend(){
     let mail = sessionStorage.getItem("mail");
     let session = sessionStorage.getItem("session");
     let friend = document.getElementById("friend").value;
- 
 
+    //DESPUES DE RECIBIR LOS PARAMETROS ESTABLEZCO LA CONEXION CON EL SERVLET
     var http = new XMLHttpRequest();
     http.open("POST","http://localhost:8080/final_frontend/Friend",true);
     http.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
     http.send("mail=" + mail +"&session=" + session + "&friend=" + friend);
     http.onload = function(){
 
+        //SEGUN LA RESPUESTA DEL SERVLEST SE EJECUTA UN ALERT U OTRO
         if(this.readyState== 4 && http.status==200){
             var response = http.responseText;
             alert(response);

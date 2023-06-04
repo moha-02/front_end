@@ -1,3 +1,4 @@
+//FUNCION QUE RECIBI LA RESPUESTA Y LUEGO LA CONVIERTE EN JSON Y MEDIANTE UN BUCLE FOR RECORRE EL JSON
 function listFriends(){
     let mail = sessionStorage.getItem("mail");
     let session = sessionStorage.getItem("session");
@@ -24,7 +25,7 @@ function listFriends(){
     http.send();
 
 }
-
+//VOLVER A OPCIONES
 function goOptions(){
     window.location.href = "file:///C:/Users/mohammed/Documents/front_end/html/options.html";
 }
