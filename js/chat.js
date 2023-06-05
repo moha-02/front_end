@@ -16,6 +16,7 @@ function sendSms(){
             
         }       
     }
+    getSms();
 }
 
 //FUNCION QUE PERMITE RECIBIR LOS SMS Y MOSTRARLOS EN EL CHAT CADA 50 MS SE REFRESCA

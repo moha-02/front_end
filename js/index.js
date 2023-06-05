@@ -13,7 +13,7 @@ function enviar(){
 
     if(this.readyState=== 4 && http.status===200){
       var session =http.responseText;
-      alert(session);
+      
       if(session !== "false"){
         sessionStorage.setItem("session",session);
         sessionStorage.setItem("mail",mail);
